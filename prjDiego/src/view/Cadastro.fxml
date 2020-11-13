@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="703.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastroController">
+   <children>
+      <Label alignment="CENTER" layoutX="243.0" layoutY="8.0" prefHeight="35.0" prefWidth="118.0" text="Cliente">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font></Label>
+      <TextField fx:id="txtNomeCliente" layoutX="29.0" layoutY="48.0" prefHeight="36.0" prefWidth="546.0" promptText="Nome" />
+      <TextField fx:id="txtDataNascCliente" layoutX="31.0" layoutY="103.0" promptText="Data de Nascimento" />
+      <JFXComboBox fx:id="cbxSexoCliente" layoutX="208.0" layoutY="101.0" promptText="Sexo" />
+      <Label layoutX="327.0" layoutY="107.0" text="Renda Mensal" />
+      <Spinner fx:id="spnRendaMensal" layoutX="419.0" layoutY="102.0" />
+      <Label layoutX="29.0" layoutY="142.0" text="Dependentes:">
+         <font>
+            <Font name="Eras Bold ITC" size="18.0" />
+         </font></Label>
+      <TextField fx:id="txtNomeDependente" layoutX="29.0" layoutY="170.0" prefHeight="36.0" prefWidth="414.0" promptText="Nome" />
+      <Spinner fx:id="spnIdade" layoutX="68.0" layoutY="221.0" prefHeight="25.0" prefWidth="149.0" />
+      <JFXComboBox fx:id="cbxParentesco" layoutX="244.0" layoutY="216.0" prefHeight="28.0" prefWidth="190.0" promptText="Parentesco" />
+      <JFXComboBox fx:id="cbxSexoDependente" layoutX="471.0" layoutY="177.0" promptText="Sexo" />
+      <Label layoutX="29.0" layoutY="224.0" text="Idade" />
+      <Button fx:id="btnAddDependente" layoutX="465.0" layoutY="217.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="110.0" text="Adicionar" />
+      <ListView fx:id="lstDependentes" layoutX="30.0" layoutY="259.0" prefHeight="174.0" prefWidth="546.0" />
+      <JFXComboBox fx:id="cbxClassificacao" layoutX="133.0" layoutY="486.0" prefHeight="29.0" prefWidth="118.0" promptText="Classificação" />
+      <JFXComboBox fx:id="cbxTipo" layoutX="26.0" layoutY="486.0" prefHeight="29.0" prefWidth="95.0" promptText="Tipo" />
+      <TextField fx:id="txtContato" layoutX="259.0" layoutY="490.0" prefHeight="26.0" prefWidth="190.0" promptText="Contato" />
+      <Button fx:id="btnAddContato" layoutX="465.0" layoutY="483.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="110.0" text="Adicionar" />
+      <ListView fx:id="lstContatos" layoutX="29.0" layoutY="536.0" prefHeight="99.0" prefWidth="546.0" />
+      <Button fx:id="btnFechar" layoutX="29.0" layoutY="649.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="130.0" text="Fechar" />
+      <Button fx:id="btnSalvar" layoutX="440.0" layoutY="649.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="130.0" text="Salvar" />
+      <Button fx:id="btnLimpar" layoutX="228.0" layoutY="649.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="130.0" text="Limpar" />
+      <Label layoutX="26.0" layoutY="461.0" text="Contatos:">
+         <font>
+            <Font name="Eras Bold ITC" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
